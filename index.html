@@ -67,7 +67,7 @@
       <!-- Banner end -->
 
       <!-- best for you start -->
-      <section  class="my-10 text-center">
+      <section class="my-10 text-center">
         <div class="container mx-auto">
           <h1 class="font-bold text-2xl">Best Offers For You</h1>
           <div class="flex justify-evenly items-center space-x-10 mt-10">
@@ -174,7 +174,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-12">
+          <div class="grid grid-cols-12 gap-10">
             <div class="space-y-3 col-span-6 text-start">
               <h1>Select Your Seat</h1>
               <div class="flex justify-between">
@@ -200,27 +200,73 @@
               </div>
               <div class="flex justify-between">
                 <div class="flex space-x-10">
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">A1</button>
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">A2</button>
+                  <button onclick="addingNewTicket('A1')" class="bg-gray-300 px-6 py-2 rounded-md">A1</button>
+                  <button onclick="addingNewTicket('A2')" class="bg-gray-300 px-6 py-2 rounded-md">A2</button>
                 </div>
                 <div class="flex space-x-10">
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">A3</button>
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">A4</button>
+                  <button onclick="addingNewTicket('A3')" class="bg-gray-300 px-6 py-2 rounded-md">A3</button>
+                  <button onclick="addingNewTicket('A4')" class="bg-gray-300 px-6 py-2 rounded-md">A4</button>
                 </div>
               </div>
               <div class="flex justify-between">
                 <div class="flex space-x-10">
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">B1</button>
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">B2</button>
+                  <button onclick="addingNewTicket('B1')" class="bg-gray-300 px-6 py-2 rounded-md">B1</button>
+                  <button onclick="addingNewTicket('B2')" class="bg-gray-300 px-6 py-2 rounded-md">B2</button>
                 </div>
                 <div class="flex space-x-10">
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">B3</button>
-                  <button class="bg-gray-300 px-6 py-2 rounded-md">B4</button>
+                  <button onclick="addingNewTicket('B3')" class="bg-gray-300 px-6 py-2 rounded-md">B3</button>
+                  <button onclick="addingNewTicket('B4')" class="bg-gray-300 px-6 py-2 rounded-md">B4</button>
                 </div>
               </div>
             </div>
 
-            <div class="col-span-6">select your seat</div>
+            <div class="col-span-6">
+              <h1 class="text-start">Select Your Seat</h1>
+              <div class="bg-[#F7F8F8]">
+                <table class="border-separate border-spacing-x-24 ">
+                  <thead>
+                    <tr>
+                      <th class="">Seat <span>1</span></th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="appendTableBody">
+                   
+                  </tbody>
+                </table>
+                <div class="text-start flex justify-between">
+                        <div>Total Price</div>
+                        <div>BDT <span>1100</span></div>
+                </div>
+                <div class="flex justify-center my-10">
+                    <div class="bg-[#FFFFFF] ">
+                        <input class="border-2 rounded-lg p-1" type="text" name="" id="" placeholder="have any coupon?">
+                    </div>
+                    <div>
+                        <button class="bg-[#1DD100] text-white font-bold px-3   py-1 rounded-lg">Apply</button>
+                    </div>
+                </div>
+
+                <div class="text-strat flex justify-between">
+                    <div>Grand Total</div>
+                    <div>BDT <span>1100</span></div>
+                </div>
+                <div class="text-start flex flex-col">
+                    <label class="font-bold" for="">Passenger Name*</label>
+                    <input class="border-2 rounded p-2" type="text" name="" id="" placeholder="enter your name">
+                </div>
+                <div class="text-start flex flex-col">
+                    <label class="font-bold" for="">Phone Number*</label>
+                    <input class="border-2 rounded p-2" type="number" name="" id="" placeholder="enter your phone number">
+                </div>
+                <div class="text-start flex flex-col">
+                    <label class="font-bold" for="">Email</label>
+                    <input class="border-2 rounded p-2" type="email" name="" id="" placeholder="enter your email">
+                </div>
+                <button class="bg-[#1DD100] px-20 py-2 mt-10 rounded-lg text-white font-bold">Next</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
