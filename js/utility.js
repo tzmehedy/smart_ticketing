@@ -8,6 +8,7 @@ function addInTable(id){
     const pressButton = document.getElementById(id);
     pressButton.classList.remove("bg-gray-300");
     pressButton.classList.add("bg-[#1DD100]");
+    pressButton.setAttribute('disabled',true);
     const appendTableBody = document.getElementById("appendTableBody");
 
     const newTr = document.createElement('tr');
@@ -16,7 +17,20 @@ function addInTable(id){
     <td>${id}</td>
     <td>Economy</td>
     <td>550</td>
-    `
+    `;
+    newTr.classList.add('addTable');
     appendTableBody.append(newTr);
-
+    
 }
+
+function priceCount(){
+    const totalPrice = document.getElementById("total_price");
+    const totalPriceValue = totalPrice.innerText;
+    const totalPriceInNumber = parseInt(totalPriceValue);
+    const totalPriceCount = totalPriceInNumber + 550;
+    totalPrice.innerText = totalPriceCount;
+
+    const grandTotal = document.getElementById("grandTotal");
+    grandTotal.innerText =totalPriceCount;
+}
+
