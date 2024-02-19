@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,91 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <main>
+      <!-- Navigation start -->
+      <nav>
+        <div class="container mx-auto flex justify-between items-center py-2">
+          <div>
+            <h1 class="font-bold text-2xl">P-Ticket</h1>
+          </div>
 
+          <div class="flex space-x-5">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Destination</a>
+            <a href="">Search</a>
+          </div>
+
+          <div>
+            <button class="bg-[#1DD10066] flex p-4 space-x-2 rounded-xl">
+              <h1 class="font-bold">Bus</h1>
+              <img src="./images/bus-icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation end -->
+
+      <!-- Banner start -->
+      <section class="mb-10">
+        <div
+          class="container mx-auto bg-[url('./images/banner.png')] bg-no-repeat bg-cover h-screen flex flex-col justify-center items-center text-center text-white space-y-5"
+        >
+          <h1 class="font-bold text-5xl">
+            End-to-End Travel with <br />
+            <small class="text-[#1DD100]">P Paribahan</small>
+          </h1>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app. <br />
+            The integrated testing features allow for a streamlined .
+          </p>
+
+          <button class="bg-[#1DD100] p-3 rounded-xl">
+            <a href="#buyTicketContainer">Buy Tickets</a>
+          </button>
+        </div>
+      </section>
+      <!-- Banner end -->
+
+      <!-- best for you start -->
+      <section class="my-10 text-center">
+        <div class="container mx-auto">
+          <h1 class="font-bold text-2xl">Best Offers For You</h1>
+          <div class="flex  justify-evenly items-center space-x-10">
+            <div class="bg-[#FFBF0F] flex justify-evenly rounded-2xl">
+              <div class="flex flex-col justify-center items-center p-9">
+                <h1>15% OFF</h1>
+                <p>On Your Next Purchase</p>
+                <small>Use by January 2024</small>
+              </div>
+              <div>
+                <img src="./images/cupon-devider.png" alt="" />
+              </div>
+              <div>
+                <h1>New15</h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+            <div class="bg-[#F78C9C] flex justify-evenly rounded-2xl">
+              <div class="flex flex-col justify-center items-center p-9">
+                <h1>15% OFF</h1>
+                <p>On Your Next Purchase</p>
+                <small>Use by January 2024</small>
+              </div>
+              <div>
+                <img src="./images/cupon-devider.png" alt="" />
+              </div>
+              <div class="flex flex-col justify-center items-center p-3">
+                <h1>New15</h1>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- best for you end -->
+    </main>
 
     <script src="./js/utility.js"></script>
     <script src="./js/smartTicketing.js"></script>
