@@ -43,7 +43,9 @@ function calculateCouponDisplay() {
         `;
   }
   grandTotalCalculation();
+  
 }
+
 
 function grandTotalCalculation(){
     const totalPrice = document.getElementById("total_price");
@@ -61,11 +63,30 @@ function grandTotalCalculation(){
     const grandTotalValue = totalPriceInNumber-discountContainerValueInNumber;
 
     grandTotal.innerText = grandTotalValue;
-    
-
-
-
 }
+
+// function modalContainer(){
+    // const phoneNumberInput = document.getElementById("phoneNumberInput").value;
+
+    
+//     console.log(phoneNumberInput);
+    
+//     const nextBtn = document.getElementById("nextBtn");
+//     if(typeof phoneNumberInput === 'number'){
+
+
+//         nextBtn.removeAttribute('disabled')
+  
+//     }
+//     else{
+//         alert("please provide phone number");
+//     }
+
+
+
+// }
+
+
 
 
 

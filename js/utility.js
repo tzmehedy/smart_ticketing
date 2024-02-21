@@ -34,3 +34,20 @@ function priceCount(){
     grandTotal.innerText =totalPriceCount;
 }
 
+document
+  .getElementById("phoneNumberInput")
+  .addEventListener("keyup", function () {
+ 
+    const phoneNumberInput = document.getElementById("phoneNumberInput").value;
+    console.log(phoneNumberInput);
+    const pressedBtnValueInNumber = parseInt(phoneNumberInput);
+
+
+    if(typeof pressedBtnValueInNumber === 'number'){
+        nextBtn.removeAttribute('disabled');
+    }
+    else{
+        alert('plz click a phone number');
+    }
+  });
+
